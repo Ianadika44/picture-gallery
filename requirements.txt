@@ -1,2 +1,5 @@
+autopep8==1.5.2
 Django==1.11
+django-bootstrap3==12.1.0
+pycodestyle==2.6.0
 pytz==2020.1
