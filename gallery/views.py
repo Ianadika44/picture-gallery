@@ -9,7 +9,7 @@ def welcome(request):
     return render(request, 'welcome.html')
 
 
-def gallery_of_day(request):
+def gallery_today(request):
     date = dt.date.today()
     return render(request, 'all-gallery/today-gallery.html', {"date": date, })
 
