@@ -38,3 +38,7 @@ class ArticleTestClass(TestCase):
         Editor.objects.all().delete()
         tags.objects.all().delete()
         Article.objects.all().delete()
+        
+    def test_get_gallery_today(self):
+        today_gallery = Article.todays_gallery()
+        self.assertTrue(len(today_gallery)>0)
