@@ -70,7 +70,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'pictures.wsgi.application'
 
 
