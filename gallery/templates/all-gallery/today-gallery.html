@@ -2,7 +2,7 @@
 {% block content %}
 {{ block.super}}
 
-<div class="container">
+<div class="container-iano">
 
     <!-- Looping through news   -->
     {% for gallery_item in gallery %}
@@ -16,52 +16,137 @@
 
         <!--Display news Article images  -->
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <img src="{{gallery_item.article_image.url}}" class="img-responsive" alt="Image">
+            <img src="{{news_item.article_image.url}}" class="img-responsive" alt="Image">
         </div>
-
     </div>
 
-   
+
     <div class="row">
         <h2 class="text-center">There No Gallery Items</h2>
     </div>
     {% endfor %}
 
 </div>
-<div class="container-fluid">
-    <div class="row" style="padding-left: 10px;">
-        <div class="col-md-3">
-            <a href="" data-toggle="model" data-target="#myPicture"><img src="https://bit.ly/3eezBZI"
-                    class="img-responsive" width="500" height="500"></a>
-            <hr>
-
-
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" style="padding: 20px;">
+            <a href="" data-toggle="modal" data-target="#exampleModal"><img src="https://bit.ly/3ebDuPa"
+                    class="img-responsive" width="700" height="500"></a>
+        </div>
+        <div class="col-md-3" style="padding: 20px;">
+            <a href="" data-toggle="modal" data-target="#exampleModal2"><img src="https://bit.ly/2WYC04W"
+                    class="img-responsive" width="700" height="500"></a>
+        </div>
+        <div class="col-md-3" style="padding: 20px;">
+            <a href="" data-toggle="modal" data-target="#exampleModal3"><img src="https://bit.ly/2zo8xZe"
+                    class="img-responsive" width="700" height="500"></a>
+        </div>
+        <div class="col-md-3" style="padding: 20px;">
+            <a href="" data-toggle="modal" data-target="#exampleModal3"><img src="https://bit.ly/2LSoNEG"
+                    class="img-responsive" width="700" height="500"></a>
         </div>
 
-        <div class="col-md-3">
-            <a href="" data-toggle="model" data-target="#myPicture"><img src="https://bit.ly/3ebDuPa"
-                    class="img-responsive" width="500" height="500"></a>
-            <hr>
 
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">Lifestyle</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://bit.ly/3ebDuPa" class="img-responsive">&nbsp;
+                        <p>Created:jan.30.2020</p>
+                        <p>location:Mombasa</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">copy image link</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Lifestyle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://bit.ly/2WYC04W" class="img-responsive">&nbsp;
+                        <p>Created:mar.04.2020</p>
+                        <p>location:Nyeri</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">copy image link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Lifestyle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://bit.ly/2zo8xZe" class="img-responsive">&nbsp;
+                        <p>Created:april.30.2020</p>
+                        <p>location:Nairobi</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">copy image link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Lifestyle</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://bit.ly/2LSoNEG" class="img-responsive">&nbsp;
+                        <p>Created:may.30.2020</p>
+                        <p>location:Nairobi</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">copy image link</button>
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div class="col-md-3">
-            <a href="" data-toggle="model" data-target="#myPicture"><img src="https://bit.ly/2LWn6WB"
-                    class="img-responsive" width="500" height="500"></a>
-            <hr>
-
-
-        </div>
-        <div class="col-md-3">
-            <a href="" data-toggle="model" data-target="#myPicture"><img src="https://bit.ly/2zo8xZe"
-                    class="img-responsive" width="500" height="500"></a>
-            <hr>
-
-
-
-        </div>
-
     </div>
-
 </div>
+
+
 {% endblock %}
