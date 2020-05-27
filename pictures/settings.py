@@ -15,8 +15,10 @@ import django_heroku
 import dj_database_url
 from decouple import config,Csv
 
+SECRET_KEY='7+0=@q1y@kl4l8uvskh$d)pcols)a$avn@&%5+a00&omn(f17ti'
+
 MODE=config("MODE", default="dev")
-SECRET_KEY = config('SECRET_KEY')
+
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
 if config('MODE')=="dev":
@@ -42,7 +44,7 @@ else:
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+
 
 
 # Quick-start development settings '7+0=@q1y@kl4l8uvskh$d)pcols)a$avn@&%5+a00&omn(f17t'- unsuitable for production
